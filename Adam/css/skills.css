@@ -1,0 +1,20 @@
+.skills {
+  background: #f7f7f7;
+  padding: 76px 0px 76px 0px;
+  font-family: "Open Sans", sans-serif; }
+  .skills .leftbox h3 {
+    font-weight: 900;
+    margin-bottom: 15px; }
+  .skills .leftbox p {
+    font-weight: 200;
+    font-size: 15px;
+    color: #333; }
+
+.rightbox .skills-wrapper {
+  list-style-type: none;
+  padding: 0; }
+  .rightbox .skills-wrapper .skills-progressbar span {
+    font-weight: 700; }
+
+.rightbox .bar-container .bar {
+  background-color: #DD464A !important; }

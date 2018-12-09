@@ -1,0 +1,53 @@
+@media screen and (max-width: 991px) {
+  .navbar {
+    background: rgba(21, 21, 21, 0.95); }
+  .navbar-title, .nav-item {
+    color: #DD464A; }
+  .service-box {
+    margin-bottom: 35px; }
+  .works__item-dialog img {
+    width: 100%; }
+  .news-item {
+    margin-top: 40px; }
+    .news-item img {
+      height: auto !important; }
+  .contact, .footer, .about, .skills, .services, .statistic, .works, .testimonials, .news {
+    padding: 40px 0px 40px 0px; } }
+
+@media only screen and (max-width: 800px) {
+  .works__item-dialog p {
+    font-size: 14px; } }
+
+@media screen and (max-width: 768px) {
+  .header__banner h5 {
+    font-size: 20px !important; }
+  .header__banner .name {
+    font-size: 48px; }
+  .sendMessage {
+    width: 100%; } }
+
+@media screen and (max-width: 480px) {
+  .header .header__banner .name {
+    font-size: 35px; } }
+
+@media only screen and (max-width: 441px) {
+  .about .rightbox .rightbox-definition p {
+    font-size: 13px; }
+  .works__item-dialog p {
+    font-size: 12px; }
+  .rightbox-buttons {
+    text-align: center; }
+    .rightbox-buttons li {
+      display: none;
+      margin-right: 0px !important;
+      margin-bottom: 20px; }
+  .testimonials__carousel .testimonials__owl-carousel .testimonials-item p {
+    font-size: 13px; }
+  .news .news-item p {
+    font-size: 14px; } }
+
+@media only screen and (max-width: 391px) {
+  .contact-form .form-group:nth-child(1), .contact-form .form-group:nth-child(2) {
+    margin-bottom: 1rem;
+    width: 100%;
+    display: inline-block; } }

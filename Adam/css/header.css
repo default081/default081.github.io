@@ -1,0 +1,86 @@
+#back-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 9999;
+  width: 40px;
+  height: 40px;
+  padding: 4px;
+  text-align: center;
+  line-height: 30px;
+  background: #DD464A;
+  color: #f7f7f7;
+  cursor: pointer;
+  border: 0;
+  border-radius: 2px;
+  text-decoration: none;
+  transition: opacity 0.2s ease-out;
+  opacity: 0; }
+  #back-to-top.show {
+    opacity: 1; }
+
+.navbar {
+  transition: 300ms ease; }
+
+.navbar-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+  color: #DD464A; }
+
+.hamburger:focus {
+  outline: none; }
+
+.nav-item {
+  color: #EEEEEE; }
+  .nav-item .nav-link {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    padding: 15px 20px;
+    cursor: pointer;
+    position: relative;
+    font-weight: 700; }
+  .nav-item .nav-link.active {
+    color: #DD464A; }
+
+.navBar_scrolled {
+  background: rgba(21, 21, 21, 0.95);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.8); }
+
+.header {
+  text-align: center;
+  background: linear-gradient(rgba(10, 4, 37, 0.8), rgba(10, 4, 37, 0.8)), url(../img/bg.jpg) no-repeat left bottom/cover;
+  background-color: rgba(10, 4, 37, 0.85);
+  height: 100vh;
+  font-family: 'Poppins', sans-serif; }
+  .header .header__banner {
+    color: #E0DFE3;
+    padding: 39vh 0; }
+    .header .header__banner .name {
+      font-weight: 700;
+      font-size: 68px;
+      line-height: 1.2;
+      margin-bottom: 30px; }
+      .header .header__banner .name span {
+        color: #DD464A; }
+    .header .header__banner ul {
+      list-style-type: none;
+      padding: 0; }
+      .header .header__banner ul li {
+        display: inline-block;
+        font-size: 20px;
+        margin: 0px 0px 0px 10px; }
+        .header .header__banner ul li a {
+          color: #E0DFE3; }
+          .header .header__banner ul li a i:hover {
+            transition: .4s;
+            color: #DD464A; }
+    .header .header__banner .anchor {
+      position: absolute;
+      bottom: 20%; }
+      .header .header__banner .anchor i {
+        cursor: pointer;
+        font-size: 30px; }

@@ -1,0 +1,13 @@
+.statistic {
+  padding: 76px 0px 76px 0px;
+  background: linear-gradient(rgba(10, 4, 37, 0.8), rgba(10, 4, 37, 0.8)), url(../img/statisticBg.jpg) no-repeat left bottom/cover;
+  background-attachment: fixed; }
+  .statistic .statistic-box {
+    text-align: center;
+    color: #EEEEEE;
+    display: flex;
+    flex-direction: column; }
+    .statistic .statistic-box i {
+      font-size: 60px; }
+    .statistic .statistic-box h3 {
+      padding: 15px 0px 2px 0px; }

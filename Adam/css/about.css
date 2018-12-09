@@ -1,0 +1,58 @@
+.about {
+  padding: 76px 0px 76px 0px;
+  font-family: "Open Sans", sans-serif; }
+  .about .leftbox img {
+    width: 100%;
+    height: auto; }
+  .about .rightbox .rightbox-title {
+    font-weight: 900;
+    font-size: 30px;
+    margin-bottom: 5px; }
+  .about .rightbox .rightbox-subtitle {
+    font-size: 15px;
+    font-weight: 600; }
+  .about .rightbox .rightbox-definition {
+    margin-bottom: 15px; }
+    .about .rightbox .rightbox-definition p {
+      font-weight: 200;
+      font-size: 16px;
+      color: #333;
+      margin-bottom: 11px; }
+  .about .rightbox .rightbox-contact {
+    margin-bottom: 15px;
+    list-style-type: none;
+    padding: 0; }
+    .about .rightbox .rightbox-contact li {
+      display: inline-block;
+      margin-right: 3	0px; }
+  .about .rightbox .rightbox-buttons {
+    cursor: pointer;
+    list-style-type: none;
+    padding: 0; }
+    .about .rightbox .rightbox-buttons li {
+      display: inline-block;
+      margin-right: 40px; }
+      .about .rightbox .rightbox-buttons li a {
+        color: #f7f7f7;
+        transition: 0.6s;
+        padding: 10px 30px 10px 30px;
+        background: #DD464A;
+        text-decoration: none; }
+        .about .rightbox .rightbox-buttons li a:hover {
+          background: #282B2E;
+          color: #EEEEEE; }
+
+.about__wrapper {
+  display: flex !important;
+  align-items: center;
+  justify-content: center; }
+
+@media only screen and (max-width: 991px) {
+  .about .rightbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center; }
+  .rightbox .rightbox-title {
+    margin: 25px; } }

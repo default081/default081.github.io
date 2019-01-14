@@ -1,3 +1,18 @@
+
+@media (max-width: 486px){
+
+	.header-caption h1{
+		font-size: 45px !important;
+	}
+
+}	
+@media (max-width: 702px){
+
+	.header-caption h1{
+		font-size: 60px;
+	}
+
+}
 @media (max-width: 767px){
 
 	.navbar-default .navbar-toggle{

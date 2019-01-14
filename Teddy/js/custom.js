@@ -43,7 +43,7 @@ $('.skills-progressbar-item').progressBar({
 });
 
 new TypeIt('#hero-text', {
-    strings: ["Designer", "Programmer", "Freelancer"],
+    strings: ["Designer", "Creator", "Freelancer"],
     speed: 150,
     nextStringDelay: 1500,
     breakLines: false,

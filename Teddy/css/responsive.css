@@ -1,0 +1,76 @@
+@media (max-width: 767px){
+
+	.navbar-default .navbar-toggle{
+		background: none;
+		margin-top: 25px;
+		border: none;
+	}
+
+	.navbar-default .navbar-toggle:hover,
+	.navbar-default .navbar-toggle:focus
+	{
+		background: none;
+	}
+
+	.navbar-default .navbar-toggle .icon-bar{
+		background: #f1f1f1;
+	}
+		
+	.navbar-default .navbar-collapse{
+		text-align: center;
+		border: none;
+		background: #111;
+		margin-top: 10px;
+	}
+	.navbar-default .navbar-nav a.active::after{
+		width: 111px;
+		position: relative;
+		margin: 0 auto;
+		left: 0;
+	}
+	.about-skills{
+		margin-top: 80px !important;
+	}
+	.about-desctiprion p{
+		font-size: 14px !important;
+		letter-spacing: 1px !important;
+		margin: 0;
+	}	
+}
+@media (max-width: 991px){
+	.navbar-brand{
+		font-size: 33px !important;
+	}
+	.navbar-default .navbar-nav>li{
+		margin: 30px 8px 0;
+	}
+	.navbar-default .navbar-nav>li>a{
+		font-size: 17px;
+	}
+	.about-image, .about-desctiprion, .about-skills{
+		margin-bottom: 20px;
+	}
+	.about-desctiprion p{
+		margin-bottom: 8px !important;
+		letter-spacing: 0.8px !important;
+	}
+	.services-item{
+		margin-top: 20px;
+	}
+	.price_box{
+		margin-top: 25px;
+	}
+}
+@media (max-width: 1200px ){
+	.about-desctiprion p{
+		font-size: 12px !important;
+		letter-spacing: 0.4px !important;
+		margin: 0;
+	}
+	.skills-progressbar{
+		margin-bottom: 9px !important;
+	}
+	.contact .contact-info ul .contact-info_item{
+		margin-bottom: 23px;
+	}
+}

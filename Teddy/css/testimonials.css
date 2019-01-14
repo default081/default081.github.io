@@ -1,0 +1,21 @@
+.testimonials .testimonials-carousel .testimonials_item {
+  text-align: center;
+  letter-spacing: 0.4px; }
+  .testimonials .testimonials-carousel .testimonials_item img {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px; }
+  .testimonials .testimonials-carousel .testimonials_item p {
+    color: #595a5b;
+    font-size: 15.3px; }
+  .testimonials .testimonials-carousel .testimonials_item h2 {
+    color: #232323;
+    font-weight: 900;
+    margin-top: 10px;
+    margin-bottom: 6px; }
+  .testimonials .testimonials-carousel .testimonials_item h4 {
+    color: #232323;
+    font-size: 19px;
+    margin: 0; }

@@ -1,0 +1,58 @@
+.prices .price_box {
+  overflow: hidden;
+  position: relative;
+  background: #fff;
+  padding: 58px;
+  box-shadow: 0px 40px 40px rgba(0, 0, 0, 0.05);
+  text-align: center; }
+  .prices .price_box .price_name h4 {
+    color: #232323;
+    font-weight: 900;
+    font-size: 20px;
+    letter-spacing: 2px; }
+  .prices .price_box .plan_price {
+    margin-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #efefef; }
+    .prices .price_box .plan_price h1 {
+      color: #2e2e2e;
+      font-size: 54px; }
+      .prices .price_box .plan_price h1 sub {
+        font-size: 15px;
+        color: #6c757d; }
+  .prices .price_box .price_features {
+    text-align: left; }
+    .prices .price_box .price_features ul {
+      list-style-type: none;
+      padding: 0; }
+      .prices .price_box .price_features ul li {
+        margin-top: 20px; }
+        .prices .price_box .price_features ul li p {
+          font-size: 17px;
+          color: #2e2e2e; }
+          .prices .price_box .price_features ul li p img {
+            width: 25px;
+            margin-right: 8px; }
+          .prices .price_box .price_features ul li p span {
+            color: #6c757d; }
+  .prices .price_box .price_button {
+    margin-top: 35px; }
+    .prices .price_box .price_button a {
+      border-radius: 5px;
+      padding: 11px 28px;
+      color: #fff;
+      background: #232323;
+      text-decoration: none; }
+
+.lable {
+  background: #232323;
+  padding: 4px 0;
+  padding-top: 12px;
+  text-align: center;
+  width: 200px;
+  position: absolute;
+  top: 24px;
+  color: #fff;
+  right: -58px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg); }

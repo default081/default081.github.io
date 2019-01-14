@@ -1,0 +1,37 @@
+.contact .contact-info h3 {
+  margin-top: 0;
+  letter-spacing: 0.5px;
+  font-size: 25px;
+  font-weight: 900; }
+
+.contact .contact-info p {
+  font-size: 16px;
+  color: #565656; }
+
+.contact .contact-info ul {
+  margin-top: 25px; }
+  .contact .contact-info ul .contact-info_item {
+    margin-bottom: 30px;
+    display: flex; }
+    .contact .contact-info ul .contact-info_item img {
+      width: 40px;
+      height: 40px; }
+    .contact .contact-info ul .contact-info_item .info-box {
+      position: relative;
+      left: 25px;
+      line-height: 10px; }
+      .contact .contact-info ul .contact-info_item .info-box h4 {
+        margin: 0; }
+      .contact .contact-info ul .contact-info_item .info-box span {
+        letter-spacing: 0.6px;
+        color: #999999; }
+
+.contact .contact-form .form-group .form-control {
+  border: none;
+  box-shadow: none;
+  background: #f1f1f5;
+  border-radius: 10px; }
+
+.contact .contact-form .actions .btn {
+  background: #232323;
+  color: #f2f2f2; }

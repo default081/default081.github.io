@@ -1,0 +1,36 @@
+.about .about-image img {
+  width: 100%;
+  height: 100%; }
+
+.about .about-desctiprion p {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.8px;
+  font-size: 14px;
+  color: #595a5b; }
+
+.about .about-desctiprion .about-social {
+  list-style-type: none;
+  padding: 0; }
+  .about .about-desctiprion .about-social li {
+    float: left;
+    margin-top: 11px;
+    margin-right: 15px;
+    border: 2px solid #181818;
+    padding: 2px;
+    border-radius: 2px; }
+    .about .about-desctiprion .about-social li a img {
+      max-width: 30px !important; }
+
+.about .about-skills .skills-wrapper .skills-progressbar {
+  display: flex;
+  margin-bottom: 22px; }
+  .about .about-skills .skills-wrapper .skills-progressbar .skill-name {
+    border: 2px solid #181818;
+    padding: 6px 9px;
+    font-size: 18px; }
+  .about .about-skills .skills-wrapper .skills-progressbar .bar-container {
+    border-radius: 100px;
+    height: 8px !important;
+    top: 6px; }
+  .about .about-skills .skills-wrapper .skills-progressbar .sonny_progressbar {
+    width: 100%; }

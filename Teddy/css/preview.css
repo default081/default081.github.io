@@ -1,0 +1,10 @@
+.preview {
+  padding: 50px 0px; }
+  .preview .preview-header {
+    text-align: center; }
+
+.preview .preview-header h2 {
+  color: red;
+  font-size: 80px;
+  font-weight: 900;
+  font-family: 'Montserrat', sans-serif; }

@@ -1,4 +1,4 @@
-$(function () {
+
 
     "use strict";
     var wind = $(window);
@@ -31,7 +31,7 @@ $(function () {
             "scrollTop": $('#' + scrollTo).offset().top - 80
         }, 1000);
     });
-});
+
 
 // Skills bar animation settings
 $('.skills-progressbar-item').progressBar({
@@ -93,6 +93,5 @@ $('.testimonials-carousel').owlCarousel({
         }
     }
 })
-
 
 new WOW().init();

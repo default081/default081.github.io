@@ -38,8 +38,9 @@
 		margin-top: 10px;
 	}
 	.navbar-default .navbar-nav a.active::after{
-		width: 111px;
+		width: 90px;
 		position: relative;
+		top: -12px;
 		margin: 0 auto;
 		left: 0;
 	}

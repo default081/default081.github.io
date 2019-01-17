@@ -4,7 +4,9 @@
 	.header-caption h1{
 		font-size: 45px !important;
 	}
-
+	.skills-progressbar .skill-name{
+		font-size: 16px !important;
+	}
 }	
 @media (max-width: 702px){
 

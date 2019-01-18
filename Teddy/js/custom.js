@@ -1,5 +1,7 @@
 var wind = $(window);
 
+"use strict";
+
 // Preloader
 $(wind).on("load", function () {
     $(".loading").fadeOut(500);
@@ -58,7 +60,7 @@ var portfolioContent = $('.portfolio-content-items');
 portfolioContent.mixItUp();
 
 // Button contcat scroll init
-$('a[rel="scroll-to-contact"]').click(function () {
+$('a[id="scroll-to-contact"]').click(function () {
     $('html, body').animate({
         scrollTop: $($.attr(this, 'href')).offset().top
     }, 500);

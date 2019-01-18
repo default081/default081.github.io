@@ -16,7 +16,9 @@
 
 }
 @media (max-width: 767px){
-
+	.nav-scroll{
+		height: 70px;
+	}
 	.navbar-default .navbar-toggle{
 		background: none;
 		margin-top: 25px;
@@ -37,7 +39,7 @@
 		text-align: center;
 		border: none;
 		background: #111;
-		margin-top: 10px;
+		margin-top: 5px;
 	}
 	.navbar-default .navbar-nav a.active::after{
 		width: 90px;

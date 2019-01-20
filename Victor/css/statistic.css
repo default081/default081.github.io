@@ -4,13 +4,3 @@
   .statistic .mm {
     padding-bottom: 120px;
     padding-top: 120px; }
-  .statistic:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: #000 !important;
-    opacity: .85;
-    z-index: 2; }

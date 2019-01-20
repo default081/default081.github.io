@@ -1,0 +1,16 @@
+.services .service-item {
+  display: flex;
+  padding: 30px;
+  background: #fff;
+  margin-bottom: 40px;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.07); }
+  .services .service-item .service-icon img {
+    width: 70px !important; }
+  .services .service-item .services-content {
+    overflow: hidden;
+    margin-left: 35px; }
+    .services .service-item .services-content h4 {
+      margin-bottom: 10px; }
+    .services .service-item .services-content p {
+      letter-spacing: 0.4px;
+      color: #333; }

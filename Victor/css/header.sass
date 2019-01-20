@@ -1,0 +1,199 @@
+@import url(main.css);
+
+.cd-headline 
+	font-size: 3rem
+	line-height: 1.2
+	&.clip 
+		span 
+			display: inline-block
+			padding: .2em 0
+
+		.cd-words-wrapper 
+			overflow: hidden
+			vertical-align: top
+
+		.cd-words-wrapper::after 
+			content: ''
+			position: absolute
+			top: 10%
+			right: 0
+			width: 2px
+			height: 70%
+			background-color: #aebcb9
+
+		b 
+			opacity: 0
+
+
+	b.is-visible 
+		opacity: 1
+
+
+.cd-words-wrapper 
+	display: inline-block
+	position: relative
+	text-align: left
+	b 
+		display: inline-block
+		position: absolute
+		white-space: nowrap
+		left: 0
+		top: 0
+		&.is-visible 
+			position: relative
+
+.buton 
+	padding: 10px 30px
+	border: 1px solid #1c1c1c
+	font-size: 13px
+	transition: all .5s
+	&:hover 
+		background: #1c1c1c
+		color: #eee
+
+
+.buton-bg 
+	background: #1c1c1c
+	color: #eee
+	&:hover 
+		background: transparent !important
+		color: #343434 !important
+
+
+.navbar-default 
+	padding: 20px 0 30px
+	background: none
+	border: none
+	border-radius: 0
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	z-index: 99
+	.navbar-nav > li 
+		font-size: 14px
+		margin: 25px 20px 0
+		padding: 5 10px
+		background: none
+		cursor: pointer
+		position: relative
+		> a 
+			margin: 0 !important
+			color: #fff !important
+			padding: 0 !important
+			position: relative
+			overflow: hidden
+			&:after 
+				content: ''
+				width: 0
+				height: 2px
+				background: #fff
+				position: absolute
+				bottom: 0
+				left: 0
+				transition: all .5s
+
+
+		.active 
+			background: none
+			&:after 
+				width: 100%
+
+
+.nav-scroll 
+	background: #111111
+	box-shadow: 0 2px 50px rgba(0, 0, 0, 0.05)
+	min-height: 60px
+	line-height: 60px
+	padding: 0
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	transition: all .5s
+	.logo 
+		padding-top: 2px
+	// 	color: #1c1c1c
+	// 	&:hover 
+	// 		color: #1c1c1c
+	// 	&:focus 
+	// 		color: #1c1c1c
+	// .navbar-nav > li > a 
+	// 	color: #111 !important
+	// 	&:after 
+	// 		background: #222
+
+
+.logo 
+	float: left
+	padding-top: 20px
+	font-size: 22px
+	font-weight: 800
+	text-transform: uppercase
+	letter-spacing: 2px
+	color: #fff
+	&:hover 
+		color: #fff
+
+	&:focus 
+		color: #fff
+
+
+.header 
+	height: 100vh
+	background-size: cover
+	position: relative
+	overflow: hidden
+	&:after 
+		content: ''
+		position: absolute
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+		background: #000
+		opacity: .85
+		z-index: 2
+
+	.v-middle 
+		z-index: 11
+
+	.caption 
+		text-align: left
+		color: #fff
+		margin-top: 50px
+		h5 
+			color: #fff
+			font-size: 20px
+			font-weight: 400
+			span 
+				font-weight: 600
+		h1 
+			font-weight: 200
+			b 
+				font-weight: 900
+		p 
+			font-size: 17px
+			color: #fff
+			line-height: 32px
+			opacity: 0.7
+
+		.social-icon 
+			margin-top: 30px
+			a 
+				margin-right: 5px
+
+			span 
+				font-size: 14px
+				text-align: center
+				width: 35px
+				height: 35px
+				line-height: 35px
+				border-radius: 50%
+				background: rgba(0, 0, 0, 0.3)
+
+
+.no-js .cd-words-wrapper b 
+	opacity: 0
+	&.is-visible 
+		opacity: 1

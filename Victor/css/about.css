@@ -1,0 +1,46 @@
+.about .about-img img {
+  position: relative; }
+
+.about .about-img:before {
+  content: "";
+  background-color: #f2f2f2;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: -6%;
+  left: -6%;
+  z-index: 0; }
+
+.about .about-content .about-heading h3 {
+  font-weight: 900;
+  margin-bottom: 5px; }
+
+.about .about-content .about-heading span {
+  font-size: 17px;
+  margin-bottom: 20px;
+  letter-spacing: 1.5px; }
+
+.about .about-content .about-heading p {
+  letter-spacing: 1px;
+  line-height: 22px;
+  border-bottom: 1px solid #c1c1c1;
+  padding-bottom: 40px;
+  color: #595a5b; }
+
+.about .about-content .about-info {
+  margin-top: 10px; }
+  .about .about-content .about-info li {
+    width: 48%;
+    margin-top: 20px;
+    display: inline-block; }
+    .about .about-content .about-info li .title {
+      font-weight: 900;
+      color: #333333; }
+    .about .about-content .about-info li .value {
+      color: #595a5b;
+      letter-spacing: 0.4px; }
+
+.about .about-content .about-skills {
+  margin-top: 20px; }
+  .about .about-content .about-skills .skills-wrapper .skills-progressbar span:nth-child(2n) {
+    float: right; }

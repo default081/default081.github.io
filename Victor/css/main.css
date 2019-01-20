@@ -1,0 +1,101 @@
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	text-decoration: none !important;
+	list-style: none !important;
+	outline: none !important;
+}
+
+body {
+	font-family: Poppins, sans-serif;
+}
+
+img{
+	width: 100%;
+	height: auto;
+}
+
+span{
+  display: inline-block;
+}
+
+a, a:hover, a:focus{
+  color: inherit;
+}
+
+/* ---------------- Typography -----------------*/
+
+h1{
+	font-size: 60px;
+}
+
+h2{
+	font-size: 50px;
+}
+
+h3{
+	font-size: 30px;
+}
+
+h4{
+	font-size: 25px;
+}
+
+h5{
+	font-size: 20px;
+}
+
+h6{
+	font-size: 16px;
+}
+
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+}
+
+.section-padding {
+ 	padding: 100px 0; 
+}
+
+.section-head {
+	margin-bottom: 80px;
+	text-align: center; 
+}
+
+.section-head h3 {
+	margin-bottom: 10px;
+	font-weight: 900;
+	font-size: 40px;
+	position: relative;
+	display: inline-block;
+	z-index: 4;
+	letter-spacing: 2px; 
+}
+
+.section-head p{
+	color: #666;
+}
+
+.bg-gray{
+	background: #f2f2f2;
+}
+
+
+/* ----- vertical middle align ----*/
+
+.v-middle {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    -o-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+}
+

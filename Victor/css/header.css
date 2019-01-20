@@ -116,7 +116,6 @@
 
 .header {
   height: 100vh;
-  background-attachment: fixed;
   background-size: cover;
   position: relative;
   overflow: hidden; }

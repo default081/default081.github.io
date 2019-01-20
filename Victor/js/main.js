@@ -29,7 +29,7 @@ $.scrollIt({
     wind.on("scroll",function () {
         var bodyScroll = wind.scrollTop(),
             navbar = $(".navbar-default")
-        if(bodyScroll > 300){
+        if(bodyScroll > 100){
             navbar.addClass("nav-scroll");
         }else{
             navbar.removeClass("nav-scroll");

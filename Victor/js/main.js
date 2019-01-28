@@ -1,158 +1,66 @@
-// $(function() {
-
-
-// "use strict";
-// var wind = $(window);
-
-// // Stellar init
-// wind.stellar();
-
-
-// // scrollIt
-// $.scrollIt({
-//   upKey: 38,                // key code to navigate to the next section
-//   downKey: 40,              // key code to navigate to the previous section
-//   easing: 'swing',         // the easing function for animation
-//   scrollTime: 600,          // how long (in ms) the animation takes
-//   activeClass: 'active',    // class given to the active nav element
-//   onPageChange: null,       // function(pageIndex) that is called when page is changed
-//   topOffset: -60            // offste (in px) for fixed top navigation
-// });
-
-//   // close navbar-collapse when a  clicked
-//   // $(".nav a").on('click', function () {
-//       // $(".navbar-collapse").removeClass("in").addClass("collapse");
-//   // });
-
-
-//     // navbar scrolling background
-//     wind.on("scroll",function () {
-//         var bodyScroll = wind.scrollTop(),
-//             navbar = $(".navbar-default")
-//         if(bodyScroll > 300){
-//             navbar.addClass("nav-scroll");
-//         }else{
-//             navbar.removeClass("nav-scroll");
-//         }
-//     });
-
-// // Skills bar animation settings
-// $('.skills-progressbar-item').progressBar({
-//   shadow : false,
-//   percentage : true,
-//   animation : true,
-//   animateTarget : true,
-//   barColor : "#333333",
-// });
-
-// });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-$(function() {
-
-  "use strict";
-
-    var wind = $(window);
-
-
-    // scrollIt
-    $.scrollIt({
-      upKey: 38,                // key code to navigate to the next section
-      downKey: 40,              // key code to navigate to the previous section
-      easing: 'swing',         // the easing function for animation
-      scrollTime: 600,          // how long (in ms) the animation takes
-      activeClass: 'active',    // class given to the active nav element
-      onPageChange: null,       // function(pageIndex) that is called when page is changed
-      topOffset: -60            // offste (in px) for fixed top navigation
+$(document).on("ready", function() {
+  (function($) {
+    "use strict"
+    /*--------------------
+        * Header Class
+    ----------------------*/
+    // $(".navbar-toggler").on("click", function(a) {
+    //   a.preventDefault(), $(".navbar").addClass("fixed-header")
+    // });
+    $(".toggler-menu").on('click', function() {
+      $(this).addClass("open");
+      $(".top-side-nav").addClass("menu-open");
+      $(".menu-overlay").addClass("overlay-show");
     });
-
-
-    // close navbar-collapse when a  clicked
-    $(".nav a").on('click', function () {
-        $(".navbar-collapse").removeClass("in").addClass("collapse");
+    $(".menu-toggler-close, .menu-overlay, .top-side-nav li a").on('click', function() {
+      $(".toggler-menu").removeClass("open");
+      $(".top-side-nav").removeClass("menu-open");
+      $(".menu-overlay").removeClass("overlay-show");
     });
-
-
-    // navbar scrolling background
-    wind.on("scroll",function () {
-
-        var bodyScroll = wind.scrollTop(),
-            navbar = $(".navbar-default")
-
-        if(bodyScroll > 300){
-
-            navbar.addClass("nav-scroll");
-
-        }else{
-
-            navbar.removeClass("nav-scroll");
+    /*--------------------
+        * Menu Close
+    ----------------------*/
+    // $('.navbar-nav .nav-link').on('click', function() {
+    //   var toggle = $('.navbar-toggler').is(':visible');
+    //   if(toggle) {
+    //     $('.navbar-collapse').collapse('hide');
+    //   }
+    // });
+    /*--------------------
+        * Smooth Scroll
+    ----------------------*/
+    $('a[href*="#"]:not([href="#"])').on('click', function() {
+      if(location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        if(target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top - 65,
+          }, 1000);
+          return false;
         }
+      }
     });
-
-
-    // progress bar
-    wind.on('scroll', function () {
-        $(".skills-progress span").each(function () {
-            var bottom_of_object = 
-            $(this).offset().top + $(this).outerHeight();
-            var bottom_of_window = 
-            $(window).scrollTop() + $(window).height();
-            var myVal = $(this).attr('data-value');
-            if(bottom_of_window > bottom_of_object) {
-                $(this).css({
-                  width : myVal
-                });
-            }
-        });
+    if($(window).scrollTop() >= 60) {
+      $('.navbar').addClass('fixed-header');
+    } else {
+      $('.navbar').removeClass('fixed-header');
+    }
+    /*--------------------
+        * TypeIt 
+    ----------------------*/
+    // new TypeIt('#type-it', {
+    //   speed: 200,
+    //   loop: true,
+    //   strings: ['Freelancer', 'Designer', 'Creator'],
+    //   breakLines: false
+    // });
+    $(window).on("scroll", function() {
+      if($(window).scrollTop() >= 60) {
+        $('.navbar').addClass('fixed-header');
+      } else {
+        $('.navbar').removeClass('fixed-header');
+      }
     });
-
-
-
-
-  // stellar
-    wind.stellar();
-
-
-// Skills bar animation settings
-$('.skills-progressbar-item').progressBar({
-  shadow : false,
-  percentage : true,
-  animation : true,
-  animateTarget : true,
-  barColor : "#333333",
-});
-
-});
-
-
-
-
-
-
-
-$(window).on("load",function (){
-
-    // Preloader
-    $(".loading").addClass("loading-end").fadeOut(1000);
-
-
+  })(jQuery);
 });

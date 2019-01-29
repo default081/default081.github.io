@@ -22,6 +22,10 @@
 		<!--Font Awesome css-->
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
+		<!-- Owl -->
+		<link rel="stylesheet" href="css/libs/owl.carousel.min.css">
+		<link rel="stylesheet" href="css/libs/owl.theme.default.css">
+
 		 <!--Site Main Style css-->
 		<link href="css/style.css" rel="stylesheet">
 
@@ -30,8 +34,19 @@
 
 	</head>
 
+	<!-- <body> -->
 	<body data-spy="scroll" data-offset="98">
-	<!-- <body data-spy="scroll" data-offset="98"> -->
+
+		<!-- Preloader  -->
+		<div class="loading">
+			<div class="spinner">
+				<div class="rect1"></div>
+				<div class="rect2"></div>
+				<div class="rect3"></div>
+				<div class="rect4"></div>
+				<div class="rect5"></div>
+			</div>
+		</div>
 
 		<!--Navbar Start-->
 		<header>
@@ -149,7 +164,22 @@
 		<section id="services" class="services section-padding bg-gray">
 			<div class="container">
 				<div class="row">
-					
+					<div class="col-lg-5">
+						<div class="services-title">
+							<h3>Services</h3>
+						</div>
+						<p class="services-description">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, voluptatem. Non libero veniam numquam impedit commodi quod accusantium illum. Saepe quae dicta illo repellat nobis, sunt vero pariatur iure dolore? Voluptate tenetur soluta dolore eaque.
+						</p>
+					</div>
+					<div class="col-lg-7">
+						<div class="services-carousel owl-carousel owl-theme">
+						    <div class="services-item"><h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, sint quaerat, odit aspernatur praesentium cum autem? Saepe, aspernatur.</h4></div>
+						    <div class="services-item"><h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, sint quaerat, odit aspernatur praesentium cum autem? Saepe, aspernatur.</h4></div>
+						    <div class="services-item"><h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, sint quaerat, odit aspernatur praesentium cum autem? Saepe, aspernatur.</h4></div>
+						    <div class="services-item"><h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, sint quaerat, odit aspernatur praesentium cum autem? Saepe, aspernatur.</h4></div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -161,9 +191,9 @@
 		<script src="js/libs/jquery-3.2.1.min.js"></script>
 		<script src="js/libs/jquery-migrate-3.0.0.min.js"></script>
 		<!-- Plugins -->
-		<script src="js/libs/popper.min.js"></script>
 		<script src="js/libs/bootstrap.min.js"></script>
 		<script src="js/libs/animated.headline.js"></script>
+		<script src="js/libs/owl.carousel.min.js"></script>
 		<!-- custom -->
 		<script src="js/main.js"></script>
 	</body>

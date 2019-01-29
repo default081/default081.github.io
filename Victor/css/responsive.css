@@ -1,0 +1,15 @@
+@media (max-width: 767px) {
+  .top-side-nav .menu-avatar {
+    margin: 10px 0; } }
+
+@media (max-width: 767px) {
+  .header-banner {
+    text-align: center; }
+    .header-banner h6 {
+      font-size: 14px; }
+    .header-banner h1 {
+      font-size: 35px; }
+  .bounce {
+    left: 0;
+    right: 0;
+    padding: 0 !important; } }

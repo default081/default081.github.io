@@ -1,0 +1,219 @@
+.header-nav 
+	padding: 15px 10px 
+	-webkit-transition: all 0.2s ease 
+	-moz-transition: all 0.5s ease 
+	-o-transition: all 0.2s ease 
+	transition: all 0.2s ease 
+	.navbar-brand 
+		color: #fff 
+		font-weight: 600 
+		position: relative 
+		font-size: 23px 
+		text-transform: uppercase 
+	&.fixed-header 
+		background: #111111 
+		.navbar-brand 
+			color: #fff 
+.toggler-menu 
+	position: relative 
+	width: 30px 
+	height: 30px 
+	border: none 
+	background: none 
+	cursor: pointer 
+	outline: none !important 
+	-webkit-transition: ease all 0.3s 
+	-moz-transition: ease all 0.3s 
+	-o-transition: ease all 0.3s 
+	transition: ease all 0.3s 
+	-webkit-transform: rotate(0deg) 
+	-moz-transform: rotate(0deg) 
+	-o-transform: rotate(0deg) 
+	transform: rotate(0deg) 
+	text-align: center 
+	float: right 
+	&:after 
+		height: 0% 
+		width: 2px 
+	&:before 
+		height: 2px 
+		width: 0% 
+	& > span 
+		width: 100% 
+		height: 1px 
+		display: inline-block 
+		position: absolute 
+		float: left 
+		left: 0 
+		top: 6px 
+		background: #fff 
+		margin: auto 
+		transition: ease all 0.3s 
+		-webkit-transition-delay: 0.1s 
+		-moz-transition-delay: 0.1s 
+		-o-transition-delay: 0.1s 
+		transition-delay: 0.1s 
+		&:nth-child(2) 
+			top: 0 
+			bottom: 0 
+			width: 100% 
+			-webkit-transition-delay: 0.2s 
+			-moz-transition-delay: 0.2s 
+			-o-transition-delay: 0.2s 
+			right: 0 
+			transition-delay: 0.2s 
+		&:nth-child(3) 
+			bottom: 6px 
+			top: auto 
+			width: 100% 
+			-webkit-transition-delay: 0.1s 
+			-moz-transition-delay: 0.1s 
+			-o-transition-delay: 0.1s 
+			transition-delay: 0.1s 
+	&.open 
+		width: 30px 
+		box-shadow: none 
+		-webkit-transform: rotate(-45deg) 
+		-moz-transform: rotate(-45deg) 
+		-o-transform: rotate(-45deg) 
+		transform: rotate(-45deg) 
+		-webkit-transition-delay: 0.3s 
+		-moz-transition-delay: 0.3s 
+		-o-transition-delay: 0.3s 
+		transition-delay: 0.3s 
+		& > span 
+			width: 0% !important 
+			left: 0 
+			right: 0 
+		&:after 
+			height: 100% 
+		&:before 
+			width: 100% 
+.toggler-menu:before,
+.toggler-menu:after 
+	content: "" 
+	position: absolute 
+	left: 0 
+	right: 0 
+	top: 0 
+	bottom: 0 
+	background: #fff 
+	margin: auto 
+	-webkit-transition: ease all 0.3s 
+	-moz-transition: ease all 0.3s 
+	-o-transition: ease all 0.3s 
+	transition: ease all 0.3s 
+.toggler-menu.open:before,
+.toggler-menu.open:after 
+	-webkit-transition-delay: 0.3s 
+	-moz-transition-delay: 0.3s 
+	-o-transition-delay: 0.3s 
+	transition-delay: 0.3s 
+.top-side-nav 
+	position: fixed 
+	left: -300px 
+	top: 0 
+	bottom: 0 
+	width: 250px 
+	padding: 30px 30px 70px 
+	text-align: center 
+	background: #050505
+	overflow-y: auto 
+	z-index: 2 
+	-webkit-transition: ease all 0.3s 
+	-moz-transition: ease all 0.3s 
+	transition: ease all 0.3s 
+	&.menu-open 
+		left: 0 
+	.menu-bar 
+		margin: 0 
+		padding: 0 0 50px 
+		letter-spacing: 3px
+		list-style: none 
+		position: relative 
+		z-index: 1 
+		a 
+			color: rgba(255,255,255,.9) 
+			font-weight: 400 
+			font-size: 16px 
+			display: inline-block 
+			vertical-align: top 
+			position: relative 
+			text-decoration: none 
+			line-height: normal 
+			padding: 5px 0 
+			margin: 2px 0 
+		li 
+			display: inline-block 
+			width: 100% 
+			margin: 5px 0 
+	.menu-avatar 
+		margin: 10px 0 40px 
+		position: relative 
+		z-index: 1 
+		.img 
+			width: 105px 
+			height: 105px 
+			display: inline-block 
+			overflow: hidden 
+			border-radius: 50% 
+			border: 5px solid #fff 
+		label 
+			color: #fff 
+			width: 100% 
+			display: inline-block 
+			font-size: 16px 
+			font-weight: 600 
+	.social-icons 
+		margin: 0 
+		position: fixed 
+		bottom: 0 
+		left: -300px 
+		list-style: none 
+		width: 250px 
+		background: #000 
+		padding: 10px 0 
+		z-index: 1 
+		border-top: 1px solid #111 
+		-webkit-transition: ease all 0.3s 
+		-moz-transition: ease all 0.3s 
+		transition: ease all 0.3s 
+		li 
+			display: inline-block 
+			a 
+				margin: 0 2px 
+				font-size: 12px 
+				width: 30px 
+				height: 30px 
+				line-height: 30px 
+.top-side-nav .menu-bar a.active:after,
+.top-side-nav .menu-bar a:hover:after 
+	content: "" 
+	width: 18px 
+	height: 1px 
+	position: absolute 
+	left: 0 
+	bottom: 0 
+	background: #fff 
+	right: 0 
+	margin: auto 
+	width: 80% 
+	opacity: 0.8 
+.menu-open 
+	&.top-side-nav 
+		.social-icons 
+			left: 0 
+.menu-overlay 
+	position: fixed 
+	top: 0 
+	left: 0 
+	right: 0 
+	bottom: 0 
+	background: #000 
+	cursor: pointer 
+	opacity: 0.6 
+	display: none 
+	&.overlay-show 
+		display: block 
+
+

@@ -1,38 +1,66 @@
 <!DOCTYPE html>
 <html lang="zxx">
 	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<title>Olga - Personal Portfolio</title>
-		<link href="css/libs/bootstrap.min.css" rel="stylesheet">
-		<link href="css/styles.css" rel="stylesheet">
+
+		<!-- Meta -->
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+		<!-- Site title -->
+		<title>Vicrot - Personal Portfolio</title>
+
+ 		<!--Bootstrap css-->
+ 		<link href="css/libs/bootstrap.min.css" rel="stylesheet">
+
+		<!-- Google Fonts -->
+ 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,900" rel="stylesheet">
+		
+		<!--Font Awesome css-->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+		 <!--Site Main Style css-->
+		<link href="css/style.css" rel="stylesheet">
+
+		<!-- Responsive css -->
+		<link href="css/responsive.css" rel="stylesheet">
+
 	</head>
-	<body data-spy="scroll" data-target="#navbarOlga" data-offset="98">
-		<!-- Header -->
+
+	<body data-spy="scroll" data-offset="98">
+	<!-- <body data-spy="scroll" data-offset="98"> -->
+
+		<!--Navbar Start-->
 		<header>
 			<nav class="navbar header-nav fixed-top">
 				<div class="container">
-					<a class="navbar-brand" href="#">Olga</a>
+					<!-- Logo -->
+					<a class="navbar-brand" href="#header">Vicrot</a>
 					<button class="toggler-menu">
 					<span></span>
 					<span></span>
 					<span></span>
 					</button>
 					<div class="top-side-nav">
-						<div class="menu-avtar">
+						<!-- Nav Avatar -->
+						<div class="menu-avatar">
 							<div class="img">
-								<!-- <img src="static/img/avtar4.jpg"> -->
+								<img src="img/avatar.jpeg">
 							</div>
-							<label>I'm Olga</label>
+							<label>I'm Victor Doe</label>
 						</div>
-						<ul class="menu-bar" id="navbarOlga">
+						<!-- Nav Links -->
+						<ul class="menu-bar">
 							<li><a class="nav-link active" href="#header">Home</a></li>
 							<li><a class="nav-link" href="#about">About Me</a></li>
 							<li><a class="nav-link" href="#services">Services</a></li>
 							<li><a class="nav-link" href="#portfolio">Portfolio</a></li>
 							<li><a class="nav-link" href="#contact">Contact</a></li>
 						</ul>
+						<!-- Nav Socials -->
 						<ul class="social-icons">
 							<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
 							<li><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -44,11 +72,14 @@
 				</div>
 			</nav>
 		</header>
-		<!-- Home Banner Start -->
-		<section id="header" class="header-banner" style="background-image: url(img/gb.jpeg);">
+		<!--Navbar End-->
+
+		<!--Home Section Start-->
+		<section id="header" class="header-banner" style="background-image: url(img/bg.jpg);">
 			<div class="container">
 				<div class="row align-items-center full-screen">
 					<div class="col-md-12">
+						<!--Banner Content-->
 						<div class="header-banner-content">
 							<h5>Hello , my name is <span>Victor</span></h5>
 							<h1 class="cd-headline clip">
@@ -62,68 +93,69 @@
 						</div>
 					</div>
 				</div>
+				<!-- Scroll Down Button -->
+				<div class="arrow bounce">
+                    <a href="#about" class="fa fa-chevron-down fa-2x" href="#"></a>
+                </div>
 			</div>
 		</section>
-		<!-- Home Banner End -->
+		<!--Home Section End-->
+
+		<!--About Section Start-->
+		<section id="about" class="about section-padding">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5">
+						<!-- About Hero Image -->
+						<div class="about-image">
+							<img src="img/pexels-photo-832998.jpeg" alt="">							
+						</div>
+					</div>	
+					<div class="col-lg-7">
+						<!-- About Title -->
+						<div class="about-title">
+							<h3>Who am I</h3>
+							<span>Designer / Freelancer / Creator</span>
+						</div>		
+						<!-- About Content -->
+						<div class="about-description">
+							<p>
+								I'm 24 years old creative web designer based in New York, specializing in User Interface Design and Development. I build clean, appealing, and functional interfaces which comply with the latest web standards.
+							</p>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							</p>
+						</div>
+						<!-- About Personal Information -->
+						<div class="about-info">
+							<ul>
+								<li><span class="title">Name: </span> <span class="value">Alex Weller</span></li>
+								<li><span class="title">Phone: </span> <span class="value">+33 811 67 38</span></li>
+								<li><span class="title">Age: </span> <span class="value">34</span></li>
+								<li><span class="title">Location: </span> <span class="value">France</span></li>
+							</ul>
+						</div>
+						<div class="about-buttons">
+							<a href="" class="button btn-gray">Download CV</a>
+							<a href="" class="button btn-white">Hire Me</a>
+						</div>
+					</div>	
+				</div>
+			</div>
+		</section>
+		<!--About Section End-->
+
+		<!--Services Section Start-->
+		<section id="services" class="services section-padding bg-gray">
+			<div class="container">
+				<div class="row">
+					
+				</div>
+			</div>
+		</section>
+		<!--Services Section End-->
 
 
-<section id="about">
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quia repellat, expedita, ipsam cumque sint ratione. Natus, earum velit reiciendis dolorum explicabo corporis asperiores eius, a debitis nesciunt aliquam est.
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quia repellat, expedita, ipsam cumque sint ratione. Natus, earum velit reiciendis dolorum explicabo corporis asperiores eius, a debitis nesciunt aliquam est.
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quia repellat, expedita, ipsam cumque sint ratione. Natus, earum velit reiciendis dolorum explicabo corporis asperiores eius, a debitis nesciunt aliquam est.
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quia repellat, expedita, ipsam cumque sint ratione. Natus, earum velit reiciendis dolorum explicabo corporis asperiores eius, a debitis nesciunt aliquam est.
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quia repellat, expedita, ipsam cumque sint ratione. Natus, earum velit reiciendis dolorum explicabo corporis asperiores eius, a debitis nesciunt aliquam est.
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quia repellat, expedita, ipsam cumque sint ratione. Natus, earum velit reiciendis dolorum explicabo corporis asperiores eius, a debitis nesciunt aliquam est.
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quia repellat, expedita, ipsam cumque sint ratione. Natus, earum velit reiciendis dolorum explicabo corporis asperiores eius, a debitis nesciunt aliquam est.
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quia repellat, expedita, ipsam cumque sint ratione. Natus, earum velit reiciendis dolorum explicabo corporis asperiores eius, a debitis nesciunt aliquam est.
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quia repellat, expedita, ipsam cumque sint ratione. Natus, earum velit reiciendis dolorum explicabo corporis asperiores eius, a debitis nesciunt aliquam est.
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quia repellat, expedita, ipsam cumque sint ratione. Natus, earum velit reiciendis dolorum explicabo corporis asperiores eius, a debitis nesciunt aliquam est.
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quia repellat, expedita, ipsam cumque sint ratione. Natus, earum velit reiciendis dolorum explicabo corporis asperiores eius, a debitis nesciunt aliquam est.
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quia repellat, expedita, ipsam cumque sint ratione. Natus, earum velit reiciendis dolorum explicabo corporis asperiores eius, a debitis nesciunt aliquam est.
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quia repellat, expedita, ipsam cumque sint ratione. Natus, earum velit reiciendis dolorum explicabo corporis asperiores eius, a debitis nesciunt aliquam est.
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quia repellat, expedita, ipsam cumque sint ratione. Natus, earum velit reiciendis dolorum explicabo corporis asperiores eius, a debitis nesciunt aliquam est.
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quia repellat, expedita, ipsam cumque sint ratione. Natus, earum velit reiciendis dolorum explicabo corporis asperiores eius, a debitis nesciunt aliquam est.
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quia repellat, expedita, ipsam cumque sint ratione. Natus, earum velit reiciendis dolorum explicabo corporis asperiores eius, a debitis nesciunt aliquam est.
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quia repellat, expedita, ipsam cumque sint ratione. Natus, earum velit reiciendis dolorum explicabo corporis asperiores eius, a debitis nesciunt aliquam est.
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quia repellat, expedita, ipsam cumque sint ratione. Natus, earum velit reiciendis dolorum explicabo corporis asperiores eius, a debitis nesciunt aliquam est.
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quia repellat, expedita, ipsam cumque sint ratione. Natus, earum velit reiciendis dolorum explicabo corporis asperiores eius, a debitis nesciunt aliquam est.
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quia repellat, expedita, ipsam cumque sint ratione. Natus, earum velit reiciendis dolorum explicabo corporis asperiores eius, a debitis nesciunt aliquam est.
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quia repellat, expedita, ipsam cumque sint ratione. Natus, earum velit reiciendis dolorum explicabo corporis asperiores eius, a debitis nesciunt aliquam est.
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quia repellat, expedita, ipsam cumque sint ratione. Natus, earum velit reiciendis dolorum explicabo corporis asperiores eius, a debitis nesciunt aliquam est.
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quia repellat, expedita, ipsam cumque sint ratione. Natus, earum velit reiciendis dolorum explicabo corporis asperiores eius, a debitis nesciunt aliquam est.
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quia repellat, expedita, ipsam cumque sint ratione. Natus, earum velit reiciendis dolorum explicabo corporis asperiores eius, a debitis nesciunt aliquam est.
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quia repellat, expedita, ipsam cumque sint ratione. Natus, earum velit reiciendis dolorum explicabo corporis asperiores eius, a debitis nesciunt aliquam est.
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quia repellat, expedita, ipsam cumque sint ratione. Natus, earum velit reiciendis dolorum explicabo corporis asperiores eius, a debitis nesciunt aliquam est.
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quia repellat, expedita, ipsam cumque sint ratione. Natus, earum velit reiciendis dolorum explicabo corporis asperiores eius, a debitis nesciunt aliquam est.
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quia repellat, expedita, ipsam cumque sint ratione. Natus, earum velit reiciendis dolorum explicabo corporis asperiores eius, a debitis nesciunt aliquam est.
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quia repellat, expedita, ipsam cumque sint ratione. Natus, earum velit reiciendis dolorum explicabo corporis asperiores eius, a debitis nesciunt aliquam est.
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quia repellat, expedita, ipsam cumque sint ratione. Natus, earum velit reiciendis dolorum explicabo corporis asperiores eius, a debitis nesciunt aliquam est.
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quia repellat, expedita, ipsam cumque sint ratione. Natus, earum velit reiciendis dolorum explicabo corporis asperiores eius, a debitis nesciunt aliquam est.
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quia repellat, expedita, ipsam cumque sint ratione. Natus, earum velit reiciendis dolorum explicabo corporis asperiores eius, a debitis nesciunt aliquam est.
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quia repellat, expedita, ipsam cumque sint ratione. Natus, earum velit reiciendis dolorum explicabo corporis asperiores eius, a debitis nesciunt aliquam est.
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quia repellat, expedita, ipsam cumque sint ratione. Natus, earum velit reiciendis dolorum explicabo corporis asperiores eius, a debitis nesciunt aliquam est.
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quia repellat, expedita, ipsam cumque sint ratione. Natus, earum velit reiciendis dolorum explicabo corporis asperiores eius, a debitis nesciunt aliquam est.
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quia repellat, expedita, ipsam cumque sint ratione. Natus, earum velit reiciendis dolorum explicabo corporis asperiores eius, a debitis nesciunt aliquam est.
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quia repellat, expedita, ipsam cumque sint ratione. Natus, earum velit reiciendis dolorum explicabo corporis asperiores eius, a debitis nesciunt aliquam est.
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quia repellat, expedita, ipsam cumque sint ratione. Natus, earum velit reiciendis dolorum explicabo corporis asperiores eius, a debitis nesciunt aliquam est.
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quia repellat, expedita, ipsam cumque sint ratione. Natus, earum velit reiciendis dolorum explicabo corporis asperiores eius, a debitis nesciunt aliquam est.
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quia repellat, expedita, ipsam cumque sint ratione. Natus, earum velit reiciendis dolorum explicabo corporis asperiores eius, a debitis nesciunt aliquam est.
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quia repellat, expedita, ipsam cumque sint ratione. Natus, earum velit reiciendis dolorum explicabo corporis asperiores eius, a debitis nesciunt aliquam est.
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quia repellat, expedita, ipsam cumque sint ratione. Natus, earum velit reiciendis dolorum explicabo corporis asperiores eius, a debitis nesciunt aliquam est.
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quia repellat, expedita, ipsam cumque sint ratione. Natus, earum velit reiciendis dolorum explicabo corporis asperiores eius, a debitis nesciunt aliquam est.
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quia repellat, expedita, ipsam cumque sint ratione. Natus, earum velit reiciendis dolorum explicabo corporis asperiores eius, a debitis nesciunt aliquam est.
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quia repellat, expedita, ipsam cumque sint ratione. Natus, earum velit reiciendis dolorum explicabo corporis asperiores eius, a debitis nesciunt aliquam est.
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quia repellat, expedita, ipsam cumque sint ratione. Natus, earum velit reiciendis dolorum explicabo corporis asperiores eius, a debitis nesciunt aliquam est.
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quia repellat, expedita, ipsam cumque sint ratione. Natus, earum velit reiciendis dolorum explicabo corporis asperiores eius, a debitis nesciunt aliquam est.
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quia repellat, expedita, ipsam cumque sint ratione. Natus, earum velit reiciendis dolorum explicabo corporis asperiores eius, a debitis nesciunt aliquam est.
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quia repellat, expedita, ipsam cumque sint ratione. Natus, earum velit reiciendis dolorum explicabo corporis asperiores eius, a debitis nesciunt aliquam est.
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quia repellat, expedita, ipsam cumque sint ratione. Natus, earum velit reiciendis dolorum explicabo corporis asperiores eius, a debitis nesciunt aliquam est.
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quia repellat, expedita, ipsam cumque sint ratione. Natus, earum velit reiciendis dolorum explicabo corporis asperiores eius, a debitis nesciunt aliquam est.
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quia repellat, expedita, ipsam cumque sint ratione. Natus, earum velit reiciendis dolorum explicabo corporis asperiores eius, a debitis nesciunt aliquam est.
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quia repellat, expedita, ipsam cumque sint ratione. Natus, earum velit reiciendis dolorum explicabo corporis asperiores eius, a debitis nesciunt aliquam est.
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quia repellat, expedita, ipsam cumque sint ratione. Natus, earum velit reiciendis dolorum explicabo corporis asperiores eius, a debitis nesciunt aliquam est.
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quia repellat, expedita, ipsam cumque sint ratione. Natus, earum velit reiciendis dolorum explicabo corporis asperiores eius, a debitis nesciunt aliquam est.
-</section>
 
 		<!-- jQuery -->
 		<script src="js/libs/jquery-3.2.1.min.js"></script>

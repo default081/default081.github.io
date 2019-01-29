@@ -1,51 +1,65 @@
-// About Section
+.about-image
+	img
+		position: relative
+	&:after 
+		content: '' 
+		width: 90% 
+		height: 94% 
+		position: absolute 
+		left: 0px 
+		bottom: -21px
+		background: transparent
+		border: 6px solid #111111
+		z-index: -1 
 
-.about
-	.about-img
-		img
-			position: relative
-		&:before
-			content: "" 
-			background-color: #f2f2f2 
-			width: 100% 
-			height: 100% 
-			position: absolute 
-			bottom: -6%
-			left: -6%
-			z-index: 0 
+.about-title
+	h3
+		color: #343434
+		letter-spacing: 0.5px
+		font-weight: 900
+		font-size: 30px
+		margin-bottom: 5px
+	span 
+		color: #343434
+		font-size: 17px
+		letter-spacing: 1.5px
+		margin-bottom: 20px
 
-	.about-content
-		.about-heading
-			h3
-				font-weight: 900
-				margin-bottom: 5px
-			span 
-				font-size: 17px
-				margin-bottom: 20px
-				letter-spacing: 1.5px
-			p
-				letter-spacing: 1px
-				line-height: 22px
-				border-bottom: 1px solid #c1c1c1
-				padding-bottom: 40px
-				color: #595a5b
-		.about-info
-			margin-top: 10px
-			li 
-				width: 48%
-				margin-top: 20px	
-				display: inline-block
-				.title
-					font-weight: 900
-					color: #333333
-				.value
-					color: #595a5b
-					letter-spacing: 0.4px
-		.about-skills
-			margin-top: 20px
-			.skills-wrapper
-				.skills-progressbar
-					span:nth-child(2n)
-						float: right
+.about-description
+	border-bottom: 1px solid #757575
+	p 
+		line-height: 27px
+		color: #757575
+		letter-spacing: 0.6px
 
+.about-info
+	li 
+		width: 48%
+		margin-top: 15px	
+		display: inline-block
+		.title
+			font-weight: 700
+			color: #333333
+		.value
+			color: #757575
+			letter-spacing: 0.4px
 
+.about-buttons
+	margin-top: 40px
+	a 
+		margin-right: 20px
+		
+@media only screen and (max-width: 1199px)
+	.about-title span
+		margin-bottom: 5px !important
+	.about-description
+		p 
+			letter-spacing: 0 !important
+			margin-bottom: 0rem !important
+	.about-info 
+		li
+			margin-top: 9px
+	.about-buttons 
+		margin-top: 27px
+		a
+			padding: 10px 17px

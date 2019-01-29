@@ -1,0 +1,131 @@
+* 
+	box-sizing: border-box
+	padding: 0
+	margin: 0
+	text-decoration: none !important
+	list-style: none !important
+	outline: none !important
+
+body 
+	font-family: Open sans, sans-serif
+
+img 
+	width: 100%
+	height: auto
+
+span 
+	display: inline-block
+
+a 
+	color: inherit
+	&:hover 
+		color: inherit
+
+	&:focus 
+		color: inherit
+
+h1 
+	font-size: 60px
+	margin: 0
+
+h2 
+	font-size: 50px
+	margin: 0
+
+h3 
+	font-size: 30px
+	margin: 0
+
+h4 
+	font-size: 25px
+	margin: 0
+
+h5 
+	font-size: 20px
+	margin: 0
+
+h6 
+	font-size: 16px
+	margin: 0
+
+.section-head
+	text-align: center
+	p 
+		position: relative
+		background-color: #1957f3
+		color: #fff
+		display: inline-block
+		margin-bottom: 5px
+		text-align: center
+		text-transform: uppercase
+		padding: 0 12px
+		letter-spacing: 1px
+		&:after
+			content: ""
+			position: absolute
+			top: 0
+			bottom: 0
+			border: 11px solid #1957f3
+			z-index: 2
+			left: -12px
+			border-right-width: 11px
+			border-left-color: transparent !important
+		&:before
+			content: ""
+			position: absolute
+			top: 0
+			bottom: 0
+			border: 11px solid #1957f3
+			z-index: 2
+			right: -12px
+			border-left-width: 11px
+			border-right-color: transparent !important
+	h3
+		color: #343434
+		font-weight: 700
+		margin-bottom: 65px
+		&:after 
+			position: absolute
+			content: ''
+			display: block
+			height: 30px
+			width: 1px
+			bottom: 20px
+			left: 50%
+			background-color: #1957f3
+			transform: translate(-50%, 0)
+
+.full-screen 
+	min-height: 100vh
+
+.section-padding
+	padding: 90px 0
+
+.text-center
+	text-align: center
+
+.bg-gray
+	background: #F7F7F7
+
+/*    Buttons    */
+.button
+	letter-spacing: 0.4px
+	padding: 10px 30px
+	font-size: 14px
+	font-weight: 500
+	transition: all .5s
+	border: 1px solid #111111
+
+.btn-gray
+	background: #111111
+	color: #fff
+	&:hover
+		color: #343434
+		background: #fff
+
+.btn-white
+	color: #111111
+	background: #fff
+	&:hover
+		color: #fff
+		background: #111111

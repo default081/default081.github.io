@@ -1,3 +1,38 @@
+.services-description
+	font-size: 15px
+.services-button
+	margin-top: 25px
 .services-carousel
+	margin-top: 43px
 	.services-item
-		
+		display: flex
+		.icon
+			padding-right: 10px
+			img
+				width: 50px
+		.content
+			h4
+				font-size: 21px
+				margin-bottom: 15px
+				font-weight: 700
+				position: relative
+				&:before
+				    content: ''
+				    position: absolute
+				    left: 0
+				    bottom: -7px
+				    height: 1px
+				    width: 52px
+				    background: #000
+			span
+				color: #595959
+				font-weight: 600
+				font-size: 14px
+	.owl-dots
+		.owl-dot
+			span
+				padding: 5px
+				border: 2px solid #111111
+				background: transparent
+		.active span
+			background: #111111 !important

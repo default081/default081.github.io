@@ -1,16 +1,37 @@
-.services .service-item {
-  display: flex;
-  padding: 30px;
-  background: #fff;
-  margin-bottom: 40px;
-  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.07); }
-  .services .service-item .service-icon img {
-    width: 70px !important; }
-  .services .service-item .services-content {
-    overflow: hidden;
-    margin-left: 35px; }
-    .services .service-item .services-content h4 {
-      margin-bottom: 10px; }
-    .services .service-item .services-content p {
-      letter-spacing: 0.4px;
-      color: #333; }
+.services-description {
+  font-size: 15px; }
+
+.services-button {
+  margin-top: 25px; }
+
+.services-carousel {
+  margin-top: 43px; }
+  .services-carousel .services-item {
+    display: flex; }
+    .services-carousel .services-item .icon {
+      padding-right: 10px; }
+      .services-carousel .services-item .icon img {
+        width: 50px; }
+    .services-carousel .services-item .content h4 {
+      font-size: 21px;
+      margin-bottom: 15px;
+      font-weight: 700;
+      position: relative; }
+      .services-carousel .services-item .content h4:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -7px;
+        height: 1px;
+        width: 52px;
+        background: #000; }
+    .services-carousel .services-item .content span {
+      color: #595959;
+      font-weight: 600;
+      font-size: 14px; }
+  .services-carousel .owl-dots .owl-dot span {
+    padding: 5px;
+    border: 2px solid #111111;
+    background: transparent; }
+  .services-carousel .owl-dots .active span {
+    background: #111111 !important; }
